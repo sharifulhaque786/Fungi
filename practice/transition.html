@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Practice</title>
+
+    <style>
+        .bat {
+            transform: scaleX(-1) rotate(-60deg);
+            transform-origin: top left;
+            width: 90px;
+            position: relative;
+            left: 750px;
+            top: 185px;
+            transition: transform 2s ease-in;
+        }
+
+        .field {
+            border: 1px solid;
+        }
+
+        .field:hover .bat {
+            transform: scaleX(-1) rotate(20deg);
+            transform-origin: top left;
+        }
+
+        .ball {
+            width: 60px;
+            height: 60px;
+            background: red;
+            border-radius: 50%;
+            left: 963px;
+            position: relative;
+            transition: translate 2s ease-in 2s;
+        }
+
+        .field:hover .ball {
+            translate: 1200px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="pngimg.com - cricket_PNG48.png">
+        <div class="ball">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
